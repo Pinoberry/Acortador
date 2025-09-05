@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Acortador Junior</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="pagina">
+      <section class="tarjeta">
+        <h1 class="titulo">Acortador de Links</h1>
+        <form id="formulario" class="formulario">
+          <label for="entrada-url" class="etiqueta">URL a acortar</label>
+          <input
+            id="entrada-url"
+            class="entrada"
+            type="text"
+            placeholder="https://ejemplo.com/articulo"
+          />
+          <button class="boton" type="submit">Acortar</button>
+        </form>
+
+        <div id="bloque-resultado" class="resultado oculto">
+          <label for="salida-corta" class="etiqueta">Enlace corto</label>
+          <div class="fila">
+            <input id="salida-corta" class="entrada" type="text" readonly />
+            <button id="boton-copiar" class="boton secundario" type="button">
+              Copiar
+            </button>
+          </div>
+          <p id="mensaje" class="mensaje"></p>
+        </div>
+
+        <div class="historial">
+          <h2 class="subtitulo">Últimos enlaces</h2>
+          <ul id="lista-historial" class="lista"></ul>
+        </div>
+      </section>
+      <footer class="pie">© 2025 Acortador Junior</footer>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
